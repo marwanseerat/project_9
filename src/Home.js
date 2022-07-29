@@ -11,26 +11,11 @@ function Home() {
   return (
     <div>
         <>
-  {/* Carousel Start */}
-  {/* Carousel End */}
 
   {/* Service Start */}
  <Service/>
   {/* Service End */}
- 
-  {/* Categories Start */}
-  <Category/>
-  {/* Categories Start */}
 
-
-  {/* Courses Start */}
- <PopularCourses/>
-  {/* Courses End */}
- 
-
-  {/* Testimonial Start */}
- <Testimonial/>
-  {/* Testimonial End */}
 </>
 
     </div>
