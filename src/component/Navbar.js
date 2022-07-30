@@ -71,22 +71,20 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarCollapse">
       <div className="navbar-nav ms-auto p-4 p-lg-0">
         
-        <Link to= '/'>
-        <a href="index.html" className="nav-item nav-link active">
+        <Link to= '/' className="nav-item nav-link active">
+      
           Home
-        </a>
+    
         </Link>
 
-        <Link to= '/about'>
-        <a href="about.html" className="nav-item nav-link">
+        <Link to= '/about'className="nav-item nav-link">
+    
           About
-        </a>
+       
         </Link>
 
-        <Link to= '/courses'>
-        <a href="courses.html" className="nav-item nav-link">
+        <Link to= '/courses' className="nav-item nav-link">
           Courses
-        </a>
         </Link>
 
         <div className="nav-item dropdown">
@@ -98,22 +96,20 @@ function Navbar() {
             Pages
           </a>
           <div className="dropdown-menu fade-down m-0">
-            <a href="team.html" className="dropdown-item">
+            <a href="#" className="dropdown-item">
               Our Team
             </a>
-            <a href="testimonial.html" className="dropdown-item">
+            <a href="#" className="dropdown-item">
               Testimonial
             </a>
-            <a href="404.html" className="dropdown-item">
+            <a href="#" className="dropdown-item">
               404 Page
             </a>
           </div>
         </div>
 
-        <Link to= '/contact'>
-        <a href="contact.html" className="nav-item nav-link">
+        <Link to= '/contact'className="nav-item nav-link">
           Contact
-        </a>
         </Link>
        
       </div>
