@@ -113,10 +113,14 @@ function Navbar() {
         </Link>
        
       </div>
-      <a href="" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
-        Join Now
+
+
+     <Link to= '/reg' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> 
+     Join Now
         <i className="fa fa-arrow-right ms-3" />
-      </a>
+        </Link>
+
+     
     </div>
   </nav>
   {/* Navbar End */}
