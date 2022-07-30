@@ -52,7 +52,7 @@ function Navbar() {
   {/* Navbar Start */}
   <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
     <a
-      href="index.html"
+      href="#"
       className="navbar-brand d-flex align-items-center px-4 px-lg-5"
     >
       <h2 className="m-0 text-primary">
@@ -71,28 +71,23 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarCollapse">
       <div className="navbar-nav ms-auto p-4 p-lg-0">
         
+        <Link to= '/'>
         <a href="index.html" className="nav-item nav-link active">
           Home
         </a>
-     
+        </Link>
 
-     
+        <Link to= '/about'>
         <a href="about.html" className="nav-item nav-link">
           About
         </a>
-      
+        </Link>
 
-    
+        <Link to= '/courses'>
         <a href="courses.html" className="nav-item nav-link">
           Courses
         </a>
-      
-
-      
-        <a href="courses.html" className="nav-item nav-link">
-          Post
-        </a>
-      
+        </Link>
 
         <div className="nav-item dropdown">
           <a
@@ -115,11 +110,11 @@ function Navbar() {
           </div>
         </div>
 
-        
+        <Link to= '/contact'>
         <a href="contact.html" className="nav-item nav-link">
           Contact
         </a>
-
+        </Link>
        
       </div>
       <a href="" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">

@@ -2,8 +2,7 @@ import React from 'react'
 import Category from './component/Category'
 import PopularCourses from './component/PopularCourses'
 import Service from './component/Service'
-
-
+import Testimonial from './component/Testimonial'
 
 function Home() {
   return (
@@ -23,6 +22,11 @@ function Home() {
   {/* PopularCourses Start */}
   <PopularCourses/>
   {/* PopularCourses End */}
+
+  
+  {/* Testimonial Start */}
+<Testimonial/>
+  {/* Testimonial End */}
 </>
 
     </div>
