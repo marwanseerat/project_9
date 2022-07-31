@@ -21,10 +21,12 @@ function App() {
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Courses" element={<Courses />}/>
+        <Route path="/quiz" element={<Quiz/>}/>
+        <Route path="/Questions" element={<Questions/>}/>
       </Routes>
     </BrowserRouter>
-    <Quiz/>
-    <Questions/>
+    
+    
 
     <Footer/>
     </div>

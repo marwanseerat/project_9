@@ -23,7 +23,7 @@ export default function Quiz() {
 
     useEffect (() => {
 
-        axios.get("http://localhost/project_9/php_crud/quiz.php?question_category="+ question_category+"&question_difficulty=" + question_difficulty+"&company="+company).then((res)=> {
+        axios.get("http://localhost/project_9/php_crud/view.php"+ question_category+"&question_difficulty=" + question_difficulty+"&company="+company).then((res)=> {
         console.log(typeof res.data);
        
              setResult(res.data) ;
