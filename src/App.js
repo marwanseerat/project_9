@@ -5,6 +5,8 @@ import Footer from "./component/Footer"
 import About from "./component/About"
 import Contact from "./component/Contact"
 import Courses from "./component/Courses"
+import Quiz from "./component/quiz_page/Quiz";
+import Questions from "./component/Questions/Questions";
 
 
 
@@ -21,6 +23,9 @@ function App() {
         <Route path="/Courses" element={<Courses />}/>
       </Routes>
     </BrowserRouter>
+    <Quiz/>
+    <Questions/>
+
     <Footer/>
     </div>
   );
