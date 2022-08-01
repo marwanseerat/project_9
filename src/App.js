@@ -4,7 +4,7 @@ import Navbar from "./component/Navbar"
 import Footer from "./component/Footer"
 import About from "./component/About"
 import Contact from "./component/Contact"
-import Courses from "./component/Courses"
+
 import './style.css'
 import LoginAndReg from "./Login/LoginAndReg";
 import Welcome from "./Login/Welcome";
@@ -25,8 +25,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
-        <Route path="/Courses" element={<Courses />}/>
-        <Route path="/reg" element={<LoginAndReg />}/>
+               <Route path="/reg" element={<LoginAndReg />}/>
         <Route path="/welcome" element={<Welcome />}/>
         <Route path="/profile" element={<Profile/>}/>
 

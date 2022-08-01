@@ -48,7 +48,7 @@ console.log(errorLog.error);
               onChange={(e)=>dispatch(password(e.target.value))}
             />
           </p>
-          <span>{errorLog.error}</span>
+          <span className='err'>{errorLog.error}</span>
           <p className="login button">
             <input type="submit" defaultValue="Login" />
           </p>
@@ -76,7 +76,7 @@ console.log(errorLog.error);
               // placeholder="myusername690"
               onChange={(e)=>dispatch(username(e.target.value))}
             />
-            <span>{error.usernameError}</span>
+            <span className='err'>{error.usernameError}</span>
           </p>
           <p>
             <label htmlFor="emailsignup" className="youmail" data-icon="e">
@@ -91,7 +91,7 @@ console.log(errorLog.error);
               // placeholder="myclevername@mail.com"
               onChange={(e)=>dispatch(email(e.target.value))}
             />
-            <span>{error.emailError}</span>
+            <span className='err'>{error.emailError}</span>
           </p>
           <p>
             <label htmlFor="passwordsignup" className="youpasswd" data-icon="p">
@@ -105,7 +105,7 @@ console.log(errorLog.error);
               // placeholder="eg. MuffinNinja"
               onChange={(e)=>dispatch(password(e.target.value))}
             />
-            <span>{error.passError}</span>
+            <span className='err'>{error.passError}</span>
           </p>
           <p>
             <label
@@ -123,7 +123,7 @@ console.log(errorLog.error);
               // placeholder="eg. MuffinNinja"
               onChange={(e)=>dispatch(confirmPass(e.target.value))}
             />
-            <span>{error.confirmPassError}</span>
+            <span className='err'>{error.confirmPassError}</span>
           </p>
 
           <p>
@@ -141,7 +141,7 @@ console.log(errorLog.error);
             required="required"
             onChange={(e)=>dispatch(avatar(e.target.value))}
             />
-           <span>{error.avatarError}</span>
+           <span className='err'>{error.avatarError}</span>
           </p>
 
           <p className="signin button">

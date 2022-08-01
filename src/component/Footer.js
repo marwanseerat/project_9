@@ -19,7 +19,7 @@ function Footer() {
     <div>
       <i className="fa fa-map-marker" />
       <p>
-        <span>Fifth Area, Aqaba</span> Jordan
+        <span className='span'>Fifth Area, Aqaba</span> Jordan
       </p>
     </div>
     <div>
