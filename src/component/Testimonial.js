@@ -15,14 +15,12 @@ function Testimonial() {
   <div className="box">
     <i className="fas fa-quote-left quote" />
     <p>
-      Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits.
-      Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus
-      repudiandae deleniti ideas fuga molestiae, alias.
+    I heard from Aya, my old colleague and college friend, that Wajih website provide a very good technical interview question. 
     </p>
     <div className="content">
       <div className="info">
-        <div className="name">Alex Smith</div>
-        <div className="job">Designer | Developer</div>
+        <div className="name"> Sara Kteifan</div>
+        <div className="job">Designer |Web Developer</div>
         <div className="stars">
           <i className="fas fa-star" />
           <i className="fas fa-star" />
@@ -32,21 +30,19 @@ function Testimonial() {
         </div>
       </div>
       <div className="image">
-        <img src="img/testimonial-1.jpg" alt="" />
+        <img src="img/Sara_Kteifan.png" alt="" />
       </div>
     </div>
   </div>
   <div className="box">
     <i className="fas fa-quote-left quote" />
     <p>
-      Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits.
-      Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus
-      repudiandae deleniti ideas fuga molestiae, alias.
+    I heard from Sara, my old colleague and college friend, that Wajih website provide a very good technical interview question. 
     </p>
     <div className="content">
       <div className="info">
-        <div className="name">Steven Chris</div>
-        <div className="job">YouTuber | Blogger</div>
+        <div className="name">Saja Al Ghalayini </div>
+        <div className="job">Designer |Web Developer</div>
         <div className="stars">
           <i className="fas fa-star" />
           <i className="fas fa-star" />
@@ -56,21 +52,19 @@ function Testimonial() {
         </div>
       </div>
       <div className="image">
-        <img src="img/testimonial-2.jpg" alt="" />
+        <img src="img/saja.jpg" alt="" />
       </div>
     </div>
   </div>
   <div className="box">
     <i className="fas fa-quote-left  quote" />
     <p>
-      Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits.
-      Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus
-      repudiandae deleniti ideas fuga molestiae, alias.
+    I heard from Marwa, my old colleague and college friend, that Wajih website provide a very good technical interview question. 
     </p>
     <div className="content">
       <div className="info">
-        <div className="name">Kristina Bellis</div>
-        <div className="job">Freelancer | Advertiser</div>
+        <div className="name">Aya Alsawa</div>
+        <div className="job">Designer |Web Developer</div>
         <div className="stars">
           <i className="fas fa-star" />
           <i className="fas fa-star" />
@@ -80,7 +74,7 @@ function Testimonial() {
         </div>
       </div>
       <div className="image">
-        <img src="img/testimonial-3.jpg" alt="" />
+        <img src="img/Aya_s_image.png" alt="" />
       </div>
     </div>
   </div>
