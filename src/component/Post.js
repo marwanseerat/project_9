@@ -43,7 +43,7 @@ class Post extends React.Component{
         return(
           <>
           
-          <div className="container gedf-wrapper">
+          <div className="container gedf-wrapper " style={{marginTop:'20vh'}}>
             <div className="row">
               <div className="col-md-3">
                 <div className="card">
