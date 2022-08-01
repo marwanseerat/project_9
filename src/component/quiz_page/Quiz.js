@@ -40,7 +40,7 @@ export default function Quiz() {
 
     return (
 
-        <div>
+        <div className='' style={{marginTop:'10%'}}>
              <div className="form-group">
                 <label htmlFor="Category">Category &nbsp; </label>
                 <select id="Category" className="col-4" onChange={CategoryHandel} >
