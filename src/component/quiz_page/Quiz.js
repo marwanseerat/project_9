@@ -97,10 +97,10 @@ export default function Quiz() {
       </div>
     </div>
 
-    <div className="container mt-5 d-flex flex-row justify-content-center">
+    <div className="container mt-5 d-flex flex-wrap justify-content-around">
       {result.map((data, key) => {
         return (
-          <div key={key} >
+          <div key={key} className="col-4">
             <div className="card text-white bg-secondary mb-3" style={{ width: "20rem"  , borderRadius : '8px'}}>
             <div class="card-header text-center" ><strong>Company : &nbsp;{data.company}</strong></div>
               <div className="card-body">
