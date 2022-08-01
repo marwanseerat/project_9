@@ -11,8 +11,6 @@ const passRegExp= RegExp(
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 )
 
-
-
 const registerReducer=(state={usernameError:'',emailError:'',passError:'',confirmPassError:'',username:''},action)=>{
 
     switch(action.type){
@@ -56,7 +54,7 @@ const registerReducer=(state={usernameError:'',emailError:'',passError:'',confir
         case "SIGNUP":
             if(state.usernameError == null && state.emailError == null && state.passError == null && state.confirmPassError == null && state.avatarError == null) {
 
-                axios.post('http://localhost/project_9/backend/register.php?username='+state.username+'&email='+state.email+'&password='+state.password+'&avatar='+state.avatar)
+                axios.post('http://localhost/project_9/php_crud/register.php?username='+state.username+'&email='+state.email+'&password='+state.password+'&avatar='+state.avatar)
                 window.location.href = "/";
  
             }else{

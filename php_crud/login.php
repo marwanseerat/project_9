@@ -1,5 +1,5 @@
 <?php
-require "connection.php";
+include_once "connect.php";
 
 
     $email    =  $_REQUEST['email'];
@@ -8,7 +8,7 @@ require "connection.php";
 
 
     try {
-        $sql = "SELECT * FROM users WHERE (email='$email' OR username='$username ') AND password='$password'";
+        $sql = "SELECT * FROM users WHERE (email='$email') AND password='$password'";
     
         $q = $conn->query($sql);
         $q->setFetchMode(PDO::FETCH_ASSOC);

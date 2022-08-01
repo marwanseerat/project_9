@@ -19,7 +19,8 @@ console.log(errorLog.error);
     <a  id="tologin" />
     <div id="wrapper">
       <div id="login" className="animate form">
-        <form  onSubmit={(e)=>Fun(e)} autoComplete="on">
+        <form action="" method="" enctype="multipart/form-data" onSubmit={(e)=>Fun(e)} >
+
           <h1>Login</h1>
           <p>
             <label htmlFor="userName" className="uname" data-icon="u">
