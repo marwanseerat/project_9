@@ -11,19 +11,19 @@ function HeroSection() {
 		<div class="col-lg-6">
 			<div class="lc-block mb-3">
 				<div editable="rich">
-					<h2 class="fw-bold display-5">Responsive left-aligned hero with image</h2>
+					<h2 class="fw-bold display-5">Technical Interview Questions for Freshers</h2>
 				</div>
 			</div>
 
 			<div class="lc-block mb-3">
 				<div editable="rich">
-					<p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+					<p class="lead">A well-planned strategy that includes the use of expert-curated interview questions and scientifically designed assessment solutions can help recruiters find the ideal job candidate. If you are looking to recruit professionals for an IT, engineering, or data science-related job, online technical tests can give you better results. 
 					</p>
 				</div>
 			</div>
 
-			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">Click me, I'm a button</a>
-				<a class="btn btn-outline-secondary px-4" href="#" role="button">Click me, I'm a button</a>
+			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">ِApply As Interviewer</a>
+				<a class="btn btn-outline-secondary px-4" href="#" role="button">Apply As Job Seeker</a>
 			</div>
 
 		</div>
