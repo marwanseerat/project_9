@@ -36,6 +36,7 @@ export default function Quiz() {
     })
   }, [question_category, question_difficulty, company])
 
+ 
   return (
 
     <div style={{marginTop:'5%'}}>
