@@ -1,6 +1,6 @@
 .main {
 	max-height: 550px;;
-	background-color: #181d38;
+	background-color: #52565b;
 	color: white;
 	font-size: 38pt;
 	text-align: center;
@@ -8,7 +8,7 @@
 }
 
 .footer-distributed{
-	background-color: #292c2f;
+	background-color: #52565b;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
