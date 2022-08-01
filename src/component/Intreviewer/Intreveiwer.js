@@ -1,0 +1,197 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+
+
+function Intreviewer() {
+    	
+    const [Created_by, setCreated_by] = useState('Created_by');
+    const [company, setcompany] = useState('');
+    const [question_category, setCategory] = useState('');
+    const [Type, setType] = useState('');
+    const [question_difficulty, setDifficulty] = useState('');
+
+    const Created_byHandel = (e) => { setCreated_by(e.target.value) }
+    const CategoryHandel = (e) => { setCategory(e.target.value) }
+    const TypeHandel = (e) => { setType(e.target.value) }
+    const DifficultyHandel = (e) => { setDifficulty(e.target.value) }
+    const companyHandel = (e) => { setcompany(e.target.value) }
+
+    const [inputFields, setInputFields] = useState([
+        {question: '', answer: '' ,correct_answer:''}
+    ])
+
+    console.log(inputFields);
+
+    const addFields = (event) => {
+        event.preventDefault(); 
+        let newfield = { question: '', answer: '' ,correct_answer:''}
+        setInputFields([...inputFields, newfield])
+
+    }
+
+    const handleFormChange = (index,event) => {
+        let data = [...inputFields];
+        data[index][event.target.name] = event.target.value;
+        data[index][event.target.name] = {...event.target.value};
+        data[index][event.target.name] = event.target.value;
+        setInputFields(data);
+
+    }
+    
+    const clickHandel = (event) => {
+
+    inputFields.map((value,index) => {
+
+        axios.post('http://localhost/project_9/php_crud/insert.php?&Created_by=' + Created_by + '&company=' + company + '&question_category=' + question_category + '&Type=' + Type + '&question_difficulty=' + question_difficulty  + '&question=' +  value.question + '&question_answer=' + value.answer + '&correct_answer=' + value.correct_answer )
+            .then((data) => {
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+})
+       
+    }
+    return (
+
+        <>
+            {/* Header Start */}
+            <div className="container-fluid bg-primary py-5 mb-5 page-header">
+            <div className="container py-5">
+            <div className="row justify-content-center">
+                <div className="col-lg-10 text-center">
+                <h1 className="display-3 text-white animated slideInDown">
+                    Intreviewer Question
+                </h1>
+                <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb justify-content-center">
+                    <li className="breadcrumb-item">
+                        <a className="text-white" href="#">
+                        Home
+                        </a>
+                    </li>
+                    <li className="breadcrumb-item">
+                        <a className="text-white" href="#">
+                        Pages
+                        </a>
+                    </li>
+                    <li
+                        className="breadcrumb-item text-white active"
+                        aria-current="page"
+                    >
+                         Intreviewer Question
+                    </li>
+                    </ol>
+                </nav>
+                </div>
+            </div>
+            </div>
+            </div>
+            {/* Header End */}
+        <form className="container" style={{marginTop : '5%' , width:'50%'}}>
+
+            <div className="form-group">
+                <label htmlFor="Category">Category </label>
+                <select id="Category" className="form-control" onChange={CategoryHandel} >
+                    <option>Full Stack</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Database</option>
+
+                </select>
+            </div>
+
+            <br></br>
+
+            <div className="form-group">
+                <label>Type  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select className="form-control" name="Type" onChange={TypeHandel} >
+                    <option value="Multiple Choice">Multiple Choice</option>
+                    <option value="True / False">True / False</option>
+
+                </select>
+               
+            </div>
+ {Type}
+            <br></br>
+ 
+ 
+            <div className="form-group">
+            <label htmlFor="Category">Difficulty &nbsp; </label>
+            <select id="Category" className="form-control"  onChange={DifficultyHandel} >
+          <option value=''>General</option>
+          <option value='Easy' >Easy</option>
+          <option value='Medium'>Medium</option>
+          <option value='Hard'>Hard</option>
+
+        </select>
+        </div>
+        <br></br>
+
+        <div className="form-group">
+        <label htmlFor="Category">Company &nbsp; </label>
+        <select id="Category" className="form-control" name="company" onChange={companyHandel}>
+          <option value=''>General</option>
+          <option value='Orange'>Orange</option>
+          <option value='Microsoft'>Microsoft</option>
+          <option value='Amazon'>Amazon</option>
+        </select>
+        {/* {company} */}
+      </div>
+   
+            <br></br>
+
+            <div className="form-group">
+                <label>Created By :</label>
+                <input type="text" className="form-control" placeholder="Please Insert Your Name" onChange={Created_byHandel} />
+            </div>
+         
+            <br></br>
+            
+
+             {inputFields.map((input, index) => {
+          return (
+          <div className="form-group">
+            <div key={index}>
+            <div><hr style={{height:'2px',borderWidth:'0',color:'black',backgroundColor:'black'}}></hr></div>
+            <label>Question / Statement</label>
+              <input
+                className="form-control"
+                name='question'
+                placeholder='question'
+                onChange={event => handleFormChange(index, event)}
+
+              />
+              </div>
+              
+              <label>Answer</label>
+              <input
+                className="form-control"
+                name='answer'
+                placeholder='answer'
+                onChange={event => handleFormChange(index, event)}
+
+              />
+
+                <label>Correct Answer</label>
+                <input
+                className="form-control"
+                name='correct_answer'
+                placeholder='answer'
+                onChange={event => handleFormChange(index, event)}
+
+              /> 
+              
+               <div><hr style={{height:'2px',borderWidth:'0',color:'black',backgroundColor:'black'}}></hr></div>
+            </div>
+              
+                
+          )
+        })}
+            <button className='btn btn-primary' style={{borderRadius:'5px'}} onClick={addFields}>Add More</button>
+            <input type="submit" value="submit" style={{borderRadius:'5px' , marginLeft :'75%'}}  className="btn btn-primary" onClick={clickHandel} />
+        </form>
+        </>
+    );
+}
+
+export default Intreviewer;
