@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div>
         <meta charSet="utf-8" />
-  <title>eLEARNING - eLearning HTML Template</title>
+  <title>WAJIH</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -50,15 +50,18 @@ function Navbar() {
   </div> */}
   {/* Spinner End */}
   {/* Navbar Start */}
-  <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+  <nav className="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0">
     <a
       href="#"
       className="navbar-brand d-flex align-items-center px-4 px-lg-5"
     >
-      <h2 className="m-0 text-primary">
+      {/* <h2 className="m-0 text-primary">
         <i className="fa fa-book me-3" />
         eLEARNING
-      </h2>
+      </h2> */}
+
+      <img className="m-0" src="img/logo1.png" style={{height:'4vw'}}/>
+
     </a>
     <button
       type="button"
@@ -69,7 +72,7 @@ function Navbar() {
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarCollapse">
-      <div className="navbar-nav ms-auto p-4 p-lg-0">
+      <div className="navbar-nav ms-auto p-4 p-lg-0 collapse navbar-collapse justify-content-md-center">
         
         <Link to= '/' className="nav-item nav-link active">
       
@@ -83,29 +86,20 @@ function Navbar() {
        
         </Link>
 
-        <Link to= '/courses' className="nav-item nav-link">
-          Courses
+        <Link to= '/quiz' className="nav-item nav-link">
+          Interview 
         </Link>
 
         <div className="nav-item dropdown">
           <a
             href="#"
-            className="nav-link dropdown-toggle"
+            className="nav-link"
             data-bs-toggle="dropdown"
           >
-            Pages
+            Video Interview
           </a>
-          <div className="dropdown-menu fade-down m-0">
-            <a href="#" className="dropdown-item">
-              Our Team
-            </a>
-            <a href="#" className="dropdown-item">
-              Testimonial
-            </a>
-            <a href="#" className="dropdown-item">
-              404 Page
-            </a>
-          </div>
+        
+          
         </div>
 
         <Link to= '/contact'className="nav-item nav-link">
