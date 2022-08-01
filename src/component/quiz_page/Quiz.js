@@ -94,8 +94,7 @@ export default function Quiz() {
     <p className="card-text">
     {data.question_difficulty}
     {data.company}
-
-
+    
     </p>
     <a href="#" className="btn btn-primary">
       Go somewhere
