@@ -31,7 +31,7 @@ function Questions() {
     }
     return (
         <div className='App'>           
-         <button className="btn btn-primary  " onClick={clickHandel} >Show Correct Answer</button>
+         <button className="btn btn-primary  " onClick={clickHandel} style={{marginTop:'10%'}}>Show Correct Answer</button>
 
             {question.map((item, key) => {
                 return (
