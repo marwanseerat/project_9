@@ -8,7 +8,7 @@ import Contact from "./component/Contact"
 import Quiz from "./component/quiz_page/Quiz";
 import Questions from "./component/Questions/Questions";
 import './style.css'
-
+import Post from "./component/Post";
 import './style.css'
 import LoginAndReg from "./Login/LoginAndReg";
 import Welcome from "./Login/Welcome";
@@ -33,6 +33,7 @@ function App() {
         <Route path="/Intreviewer" element={<Intreviewer/>}/>
         <Route path="/question/:cat/:diff/:comp" element={<Questions />}/>      
         <Route path="/reg" element={<LoginAndReg />}/>
+        <Route path="/post" element={<Post />}/>
         <Route path="/welcome" element={<Welcome />}/>
         <Route path="/profile" element={<Profile/>}/>
         </Routes>
