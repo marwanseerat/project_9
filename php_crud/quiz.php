@@ -8,7 +8,6 @@ $company = $_REQUEST['company'];
 
 
 
-// and question_difficulty = '$question_difficulty' and company = '$company'  
 $sql = "select DISTINCT question_category , question_difficulty , company  from question where 1=1  " ;
 
 if ($question_category != null) {

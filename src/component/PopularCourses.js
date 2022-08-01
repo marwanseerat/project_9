@@ -46,7 +46,7 @@ function PopularCourses() {
               <h5 className="mb-4">
               Interview Questions and Answers
               </h5> 
-              <p>This video is perfect for who has an interview soon, and doesn’t have time.</p>
+              <p>This video is perfect for who has an interview soon, and doesn’t have time & teach you how to answer </p>
             </div>
             <div className="d-flex border-top">
               

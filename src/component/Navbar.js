@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 function Navbar() {
   return (
     <div>
-        <meta charSet="utf-8" />
+  <meta charSet="utf-8" />
   <title>WAJIH</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
@@ -36,32 +36,17 @@ function Navbar() {
   {/* Template Stylesheet */}
   <link href="css/style.css" rel="stylesheet" />
   {/* Spinner Start */}
-  {/* <div
-    id="spinner"
-    className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-  >
-    <div
-      className="spinner-border text-primary"
-      style={{ width: "3rem", height: "3rem" }}
-      role="status"
-    >
-      <span className="sr-only">Loading...</span>
-    </div>
-  </div> */}
-  {/* Spinner End */}
+
   {/* Navbar Start */}
   <nav className="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0">
     <a
       href="#"
-      className="navbar-brand d-flex align-items-center px-4 px-lg-5"
-    >
+      className="navbar-brand d-flex align-items-center px-4 px-lg-5">
       {/* <h2 className="m-0 text-primary">
         <i className="fa fa-book me-3" />
         eLEARNING
       </h2> */}
-
       <img className="m-0" src="img/logo1.png" style={{height:'4vw'}}/>
-
     </a>
     <button
       type="button"
@@ -85,26 +70,19 @@ function Navbar() {
           About
        
         </Link>
+        
+        <Link to= '/contact'className="nav-item nav-link">
+          Contact
+        </Link>
+       
+        <Link to= '/Intreviewer'className="nav-item nav-link">
+        Intreviewer Question
+        </Link>
 
         <Link to= '/quiz' className="nav-item nav-link">
           Interview 
         </Link>
 
-        <div className="nav-item dropdown">
-          <a
-            href="#"
-            className="nav-link"
-            data-bs-toggle="dropdown"
-          >
-            Video Interview
-          </a>
-        
-          
-        </div>
-
-        <Link to= '/contact'className="nav-item nav-link">
-          Contact
-        </Link>
        
       </div>
 
