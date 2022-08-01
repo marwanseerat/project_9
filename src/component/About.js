@@ -156,7 +156,7 @@ function About() {
         <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <div className="team-item bg-light">
             <div className="overflow-hidden">
-              <img className="img-fluid" src="img/marwa.png" alt="" />
+              <img className="img-fluid" src="img/marwa.png" style={{height:'45vh'}} alt="" />
             </div>
             <div
               className="position-relative d-flex justify-content-center"
@@ -183,7 +183,7 @@ function About() {
         <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div className="team-item bg-light">
             <div className="overflow-hidden">
-              <img className="img-fluid" src="img/samar1.jpg" alt="" />
+              <img className="img-fluid" src="img/samar.jpeg" style={{height:'45vh'}} alt="" />
             </div>
             <div
               className="position-relative d-flex justify-content-center"
