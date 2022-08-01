@@ -49,10 +49,7 @@ function Contact() {
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <h5>Get In Touch</h5>
           <p className="mb-4">
-            The contact form is currently inactive. Get a functional and working
-            contact form with Ajax &amp; PHP in a few minutes. Just copy and
-            paste the files, add a little code and you're done.{" "}
-            <a href="https://htmlcodex.com/contact-form">Download Now</a>.
+          Wajih Company is a interview website for prepration for a technical interview questions.
           </p>
           <div className="d-flex align-items-center mb-3">
             <div
@@ -63,7 +60,8 @@ function Contact() {
             </div>
             <div className="ms-3">
               <h5 className="text-primary">Office</h5>
-              <p className="mb-0">123 Street, New York, USA</p>
+              <p className="mb-0">Fifth Area, Aqaba Jordan</p>
+
             </div>
           </div>
           <div className="d-flex align-items-center mb-3">
@@ -75,7 +73,7 @@ function Contact() {
             </div>
             <div className="ms-3">
               <h5 className="text-primary">Mobile</h5>
-              <p className="mb-0">+012 345 67890</p>
+              <p className="mb-0">+962 771234567</p>
             </div>
           </div>
           <div className="d-flex align-items-center">
@@ -87,14 +85,14 @@ function Contact() {
             </div>
             <div className="ms-3">
               <h5 className="text-primary">Email</h5>
-              <p className="mb-0">info@example.com</p>
+              <p className="mb-0">WajihCompanys@gmail.com</p>
             </div>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <iframe
             className="position-relative rounded w-100 h-100"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.3460630505733!2d35.01357481503042!3d29.53541468207044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1500703cbbda08f3%3A0xd605f3361a94e6cc!2sAqaba%20Court%20House!5e0!3m2!1sen!2sjo!4v1659372322095!5m2!1sen!2sjo"
             frameBorder={0}
             style={{ minHeight: 300, border: 0 }}
             allowFullScreen=""

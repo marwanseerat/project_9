@@ -9,10 +9,20 @@ import Quiz from "./component/quiz_page/Quiz";
 import Questions from "./component/Questions/Questions";
 import './style.css'
 
+import './style.css'
+import LoginAndReg from "./Login/LoginAndReg";
+import Welcome from "./Login/Welcome";
+import Profile from "./component/profile";
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
+    <>
     <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -21,10 +31,16 @@ function App() {
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/quiz" element={<Quiz/>}/>
         <Route path="/Intreviewer" element={<Intreviewer/>}/>
-        <Route path="/question/:cat/:diff/:comp" element={<Questions />}/>      </Routes>
+        <Route path="/question/:cat/:diff/:comp" element={<Questions />}/>      
+        <Route path="/reg" element={<LoginAndReg />}/>
+        <Route path="/welcome" element={<Welcome />}/>
+        <Route path="/profile" element={<Profile/>}/>
+        </Routes>
+
     </BrowserRouter>
-    <Footer/>
-    </div>
+     <Footer/>
+
+   </>
   );
 }
 

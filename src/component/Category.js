@@ -18,7 +18,7 @@ function Category() {
               data-wow-delay="0.1s"
             >
               <a className="position-relative d-block overflow-hidden" href="">
-                <img className="img-fluid" src="img/cat-1.jpg" alt="" />
+                <img className="img-fluid" src="img/cate2.jpg" alt="" />
                 <div
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
@@ -33,7 +33,7 @@ function Category() {
               data-wow-delay="0.3s"
             >
               <a className="position-relative d-block overflow-hidden" href="">
-                <img className="img-fluid" src="img/cat-2.jpg" alt="" />
+                <img className="img-fluid" src="img/cate1.jpg" alt="" />
                 <div
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
@@ -48,7 +48,7 @@ function Category() {
               data-wow-delay="0.5s"
             >
               <a className="position-relative d-block overflow-hidden" href="">
-                <img className="img-fluid" src="img/cat-3.jpg" alt="" />
+                <img className="img-fluid" src="img/cate3.jpg" alt="" />
                 <div
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
@@ -71,7 +71,7 @@ function Category() {
           >
             <img
               className="img-fluid position-absolute w-100 h-100"
-              src="img/cat-4.jpg"
+              src="img/cate5.jpg"
               alt=""
               style={{ objectFit: "cover" }}
             />
