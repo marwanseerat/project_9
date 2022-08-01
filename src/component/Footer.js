@@ -13,7 +13,7 @@ function Footer() {
       <a href="../Home">Home</a>·<a href="#">Blog</a>·
       <a href="./About">About</a>.<a href="#">Contact</a>
     </p>
-    <p className="footer-company-name">FantacyDesign © 2021</p>
+    <p className="footer-company-name">WajihTeam © 2021</p>
   </div>
   <div className="footer-center">
     <div>

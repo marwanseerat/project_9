@@ -4,7 +4,6 @@ import Navbar from "./component/Navbar"
 import Footer from "./component/Footer"
 import About from "./component/About"
 import Contact from "./component/Contact"
-import Courses from "./component/Courses"
 import Quiz from "./component/quiz_page/Quiz";
 import Questions from "./component/Questions/Questions";
 
@@ -20,7 +19,6 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
-        <Route path="/Courses" element={<Courses />}/>
         <Route path="/quiz" element={<Quiz/>}/>
         <Route path="/question/:cat/:diff/:comp" element={<Questions />}/>      </Routes>
     </BrowserRouter>

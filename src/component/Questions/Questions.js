@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import Card from 'react-bootstrap/Card';
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
+
 let A ;
+
 function Questions() {
     const params = useParams();
     console.log(params.cat);
@@ -31,13 +33,12 @@ function Questions() {
         setshow(!show);
     }
     return (
-        <div className='App'  style={{marginTop : '10%'}}>
-            <button className="btn btn-primary" onClick={clickHandel} >Show Correct Answer</button>
+        <div className='container' style={{marginTop : '10%'}} >
             {question.map((item, key) => {
                 return (
                     <div key={key}>
                         
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '75%' , marginLeft:'10%' }}>
                                         <Card className="text-center">
                                             <Card.Header> 
                                             <small>{item.question_category}</small>
@@ -49,10 +50,12 @@ function Questions() {
                                                 <Card.Title>{item.question}</Card.Title>
                                                 <Card.Text className="commaSeparated">
                                                       <p style={{display:'none'}}>{ A = fun(item.question_answer)}</p> 
-                                                   - {A[0]}<br></br>
-                                                   - {A[1]}<br></br>
-                                                   - {A[2]}<br></br>
-                                                   - {A[3]}<br></br>
+                                                    <ul Type="none" style={{TextAlign:'justify'}}>
+                                                        <li>{A[0]}</li>
+                                                        <li>{A[1]}</li>
+                                                        <li>{A[2]}</li>
+                                                        <li>{A[3]}</li>
+                                                    </ul>
                                                 </Card.Text>
                                           
                                             </Card.Body>
@@ -68,6 +71,7 @@ function Questions() {
                 )
 
             })}
+             <button className="btn btn-primary" style={{marginLeft:'41%' }} onClick={clickHandel} >Show Correct Answer</button>
                        </div>
     )
 
