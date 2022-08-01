@@ -41,10 +41,22 @@ const registerReducer=(state={usernameError:'',emailError:'',passError:'',confir
             }else{
                 return{...state,confirmPassError: 'The two passwords do not match'}
             }
-        case "SIGNUP":
-            if(state.usernameError == null && state.emailError == null && state.passError == null && state.confirmPassError == null) {
+             
+            case "avatar":
+            if(action.avatar !==''){
+                return {...state,avatar:action.avatar, avatarError: null};
+            }else{
+                return{...state,avatarError: 'chose image'}
+            }
 
-                axios.post('http://localhost/login-redux/backend/register.php?username='+state.username+'&email='+state.email+'&password='+state.password)
+
+
+
+
+        case "SIGNUP":
+            if(state.usernameError == null && state.emailError == null && state.passError == null && state.confirmPassError == null && state.avatarError == null) {
+
+                axios.post('http://localhost/project_9/backend/register.php?username='+state.username+'&email='+state.email+'&password='+state.password+'&avatar='+state.avatar)
                 window.location.href = "/";
  
             }else{

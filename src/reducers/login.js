@@ -20,7 +20,7 @@ const loginReducer=(state={error:''},action)=>{
             break;
         case "LOGIN":
                 const loadInfo = async () => {
-                const res = await axios.get('http://localhost/login-redux/backend/login.php?email='+state.emailORUsername+'&username='+state.emailORUsername+'&password='+state.password);
+                const res = await axios.get('http://localhost/project_9/backend/login.php?email='+state.emailORUsername+'&username='+state.emailORUsername+'&password='+state.password);
                 sessionStorage.clear()
                 sessionStorage.setItem("user_info", res.data);
                 console.log(res.data);

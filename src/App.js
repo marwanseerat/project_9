@@ -8,6 +8,7 @@ import Courses from "./component/Courses"
 import './style.css'
 import LoginAndReg from "./Login/LoginAndReg";
 import Welcome from "./Login/Welcome";
+import Profile from "./component/profile";
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Courses" element={<Courses />}/>
         <Route path="/reg" element={<LoginAndReg />}/>
         <Route path="/welcome" element={<Welcome />}/>
+        <Route path="/profile" element={<Profile/>}/>
 
       </Routes>
     </BrowserRouter>

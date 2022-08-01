@@ -1,6 +1,6 @@
 import './login.css';
 import {useSelector,useDispatch } from 'react-redux';
-import {username,email,password,confirmPass, signup, emailORUsername,login} from "../actions";
+import {username,email,password,confirmPass, signup, emailORUsername,login,avatar} from "../actions";
 
 function LoginAndReg() {
 
@@ -125,8 +125,27 @@ console.log(errorLog.error);
             />
             <span>{error.confirmPassError}</span>
           </p>
+
+          <p>
+          <label 
+          htmlFor="img"
+          className="image"
+          data-icon="image"
+          >
+          Select image{" "}
+          </label>
+            <input 
+            type="file" 
+            id="img" 
+            name="avatar"
+            required="required"
+            onChange={(e)=>dispatch(avatar(e.target.value))}
+            />
+           <span>{error.avatarError}</span>
+          </p>
+
           <p className="signin button">
-            {(error.usernameError || error.emailError || error.passError || error.confirmPassError)
+            {(error.usernameError || error.emailError || error.passError || error.confirmPassError || error.avatarError)
             ?<input type="submit" defaultValue="Sign up" disabled/>
             :<input type="submit" defaultValue="Sign up"/>
             }
