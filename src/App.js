@@ -22,12 +22,8 @@ function App() {
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Courses" element={<Courses />}/>
         <Route path="/quiz" element={<Quiz/>}/>
-        <Route path="/Questions" element={<Questions/>}/>
-      </Routes>
+        <Route path="/question/:cat/:diff/:comp" element={<Questions />}/>      </Routes>
     </BrowserRouter>
-    
-    
-
     <Footer/>
     </div>
   );

@@ -57,8 +57,8 @@ function Courses() {
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
                 >
-                  <h5 className="m-0">Web Design</h5>
-                  <small className="text-primary">49 Courses</small>
+                  <h5 className="m-0">Front - End</h5>
+                  <small className="text-primary">Intreview Questions</small>
                 </div>
               </a>
             </div>
@@ -72,8 +72,8 @@ function Courses() {
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
                 >
-                  <h5 className="m-0">Graphic Design</h5>
-                  <small className="text-primary">49 Courses</small>
+                  <h5 className="m-0">Back - End</h5>
+                  <small className="text-primary">Intreview Questions</small>
                 </div>
               </a>
             </div>
@@ -87,8 +87,8 @@ function Courses() {
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
                 >
-                  <h5 className="m-0">Video Editing</h5>
-                  <small className="text-primary">49 Courses</small>
+                  <h5 className="m-0">Database</h5>
+                  <small className="text-primary">Intreview Questions</small>
                 </div>
               </a>
             </div>
@@ -113,8 +113,8 @@ function Courses() {
               className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
               style={{ margin: 1 }}
             >
-              <h5 className="m-0">Online Marketing</h5>
-              <small className="text-primary">49 Courses</small>
+              <h5 className="m-0">Full Stack Web Development</h5>
+              <small className="text-primary">Intreview Questions</small>
             </div>
           </a>
         </div>

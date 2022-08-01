@@ -2,8 +2,7 @@ import React from 'react'
 import '../style.css'
 function Category() {
   return (
-    <div>
-       <div className="container-xxl py-5 category">
+    <div className="container-xxl py-5 category">
     <div className="container">
       <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
         <h6 className="section-title bg-white text-center text-primary px-3">
@@ -19,13 +18,13 @@ function Category() {
               data-wow-delay="0.1s"
             >
               <a className="position-relative d-block overflow-hidden" href="">
-                <img className="img-fluid" src="img/cate2.jpg" alt="" />
+                <img className="img-fluid" src="img/cat-1.jpg" alt="" />
                 <div
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
                 >
-                  <h5 className="m-0">Web Design</h5>
-                  <small className="text-primary">49 Courses</small>
+                  <h5 className="m-0">Front - End</h5>
+                  <small className="text-primary">Intreview Questions</small>
                 </div>
               </a>
             </div>
@@ -34,13 +33,13 @@ function Category() {
               data-wow-delay="0.3s"
             >
               <a className="position-relative d-block overflow-hidden" href="">
-                <img className="img-fluid" src="img/cate1.jpg" alt="" />
+                <img className="img-fluid" src="img/cat-2.jpg" alt="" />
                 <div
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
                 >
-                  <h5 className="m-0">Graphic Design</h5>
-                  <small className="text-primary">49 Courses</small>
+                  <h5 className="m-0">Back - End</h5>
+                  <small className="text-primary">Intreview Questions</small>
                 </div>
               </a>
             </div>
@@ -49,13 +48,13 @@ function Category() {
               data-wow-delay="0.5s"
             >
               <a className="position-relative d-block overflow-hidden" href="">
-                <img className="img-fluid" src="img/cate3.jpg" alt="" />
+                <img className="img-fluid" src="img/cat-3.jpg" alt="" />
                 <div
                   className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                   style={{ margin: 1 }}
                 >
-                  <h5 className="m-0">Video Editing</h5>
-                  <small className="text-primary">49 Courses</small>
+                  <h5 className="m-0">Database</h5>
+                  <small className="text-primary">Intreview Questions</small>
                 </div>
               </a>
             </div>
@@ -72,7 +71,7 @@ function Category() {
           >
             <img
               className="img-fluid position-absolute w-100 h-100"
-              src="img/cate5.jpg"
+              src="img/cat-4.jpg"
               alt=""
               style={{ objectFit: "cover" }}
             />
@@ -80,15 +79,14 @@ function Category() {
               className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
               style={{ margin: 1 }}
             >
-              <h5 className="m-0">Online Marketing</h5>
-              <small className="text-primary">49 Courses</small>
+              <h5 className="m-0">Full Stack Web Development</h5>
+              <small className="text-primary">Intreview Questions</small>
             </div>
           </a>
         </div>
       </div>
     </div>
-  </div> 
-    </div>
+  </div>
   )
 }
 

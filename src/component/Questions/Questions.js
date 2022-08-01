@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
-import {useParams} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import axios from 'axios';
+import {useParams} from 'react-router-dom';
 let A ;
 function Questions() {
-    const {question_id } = useParams(); 
+    const params = useParams();
+    console.log(params.cat);
     const [question, setquestion] = useState([]);
     const [show, setshow] = useState(false);
 
     useEffect(() => {
         const loadquestion = async () => {
-            const response = await axios.get(`http://localhost/project_9/php_crud/view.php`).then((data) => {
+            const response = await axios.get("http://localhost/project_9/php_crud/view.php?question_category="+ params.cat+"&question_difficulty=" + params.diff+"&company="+params.comp).then((data) => {
                 console.log(data.data);
                 setquestion(data.data);
             });
@@ -30,13 +31,12 @@ function Questions() {
         setshow(!show);
     }
     return (
-        <div className='App'>           
-         <button className="btn btn-primary  " onClick={clickHandel} style={{marginTop:'10%'}}>Show Correct Answer</button>
-
+        <div className='App'  style={{marginTop : '10%'}}>
+            <button className="btn btn-primary" onClick={clickHandel} >Show Correct Answer</button>
             {question.map((item, key) => {
                 return (
                     <div key={key}>
-
+                        
                         <div style={{ width: '50%' }}>
                                         <Card className="text-center">
                                             <Card.Header> 
@@ -54,6 +54,7 @@ function Questions() {
                                                    - {A[2]}<br></br>
                                                    - {A[3]}<br></br>
                                                 </Card.Text>
+                                          
                                             </Card.Body>
                                             {show &&
                                             <Card.Footer className="text-muted">cprrect answer is :
