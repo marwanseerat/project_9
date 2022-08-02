@@ -127,23 +127,7 @@ console.log(errorLog.error);
             <span className='err'>{error.confirmPassError}</span>
           </p>
 
-          <p>
-          <label 
-          htmlFor="img"
-          className="image"
-          data-icon="image"
-          >
-          Select image{" "}
-          </label>
-            <input 
-            type="file" 
-            id="img" 
-            name="avatar"
-            required="required"
-            onChange={(e)=>dispatch(avatar(e.target.value))}
-            />
-           <span className='err'>{error.avatarError}</span>
-          </p>
+         
 
           <p className="signin button">
             {(error.usernameError || error.emailError || error.passError || error.confirmPassError || error.avatarError)
