@@ -1,6 +1,6 @@
 import './login.css';
 import {useSelector,useDispatch } from 'react-redux';
-import {username,email,password,confirmPass, signup, emailORUsername,login,avatar} from "../actions";
+import {username,email,password,confirmPass, signup, emailORUsername,login} from "../actions";
 
 function LoginAndReg() {
 
@@ -14,7 +14,7 @@ function LoginAndReg() {
 console.log(errorLog.error);
   return (
     <>
-  <div id="container_demo">
+<div id="container_demo">
     <a  id="toregister" />
     <a  id="tologin" />
     <div id="wrapper">
