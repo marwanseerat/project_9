@@ -28,12 +28,16 @@ return{
     type: 'SIGNUP',
 }
 }
+
+
 export const emailORUsername=(emailORUsername)=>{
 return{
     type: 'emailORUsername',
     emailORUsername
 }
 }
+
+
 export const login=()=>{
 return{
     type: 'LOGIN',
