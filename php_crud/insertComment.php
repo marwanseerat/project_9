@@ -4,7 +4,6 @@ include('./connect.php');
 $user_id=$_REQUEST['user_id'];
 $comment=$_REQUEST['comment_description'];
 $newComment=$_REQUEST['new_comment'];
-
 $post_id=$_REQUEST['experience_id'];
 $deleted=$_REQUEST['is_deleted'];
 $changeDate= time();

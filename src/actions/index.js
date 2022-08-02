@@ -23,12 +23,6 @@ export const confirmPass=(confirmPass)=>{
     }
 }
 
-export const avatar=(avatar)=>{
-    return{
-        type: 'avatar',
-        avatar,
-    }
-}
 export const signup=()=>{
 return{
     type: 'SIGNUP',

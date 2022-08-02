@@ -40,21 +40,12 @@ const registerReducer=(state={usernameError:'',emailError:'',passError:'',confir
                 return{...state,confirmPassError: 'The two passwords do not match'}
             }
              
-            case "avatar":
-            if(action.avatar !==''){
-                return {...state,avatar:action.avatar, avatarError: null};
-            }else{
-                return{...state,avatarError: 'chose image'}
-            }
-
-
-
 
 
         case "SIGNUP":
-            if(state.usernameError == null && state.emailError == null && state.passError == null && state.confirmPassError == null && state.avatarError == null) {
+            if(state.usernameError == null && state.emailError == null && state.passError == null && state.confirmPassError == null) {
 
-                axios.post('http://localhost/project_9/php_crud/register.php?username='+state.username+'&email='+state.email+'&password='+state.password+'&avatar='+state.avatar)
+                axios.post('http://localhost/project_9/php_crud/register.php?username='+state.username+'&email='+state.email+'&password='+state.password)
                 window.location.href = "/";
  
             }else{
