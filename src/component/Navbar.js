@@ -83,6 +83,9 @@ function Navbar() {
           Interview 
         </Link>
 
+        <Link to= '/post' className="nav-item nav-link">
+         Blog
+        </Link>
        
       </div>
 

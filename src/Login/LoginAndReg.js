@@ -18,8 +18,8 @@ console.log(errorLog.error);
     <a  id="toregister" />
     <a  id="tologin" />
     <div id="wrapper">
-      <div id="login" className="animate form">
-        <form action="" method="" enctype="multipart/form-data" onSubmit={(e)=>Fun(e)} >
+      <div id="login" className="animate form" style={{ marginTop:'31%'}}>
+        <form action="" method="" enctype="multipart/form-data" onSubmit={(e)=>Fun(e)}  >
 
           <h1>Login</h1>
           <p>

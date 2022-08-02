@@ -8,7 +8,7 @@ include_once "connect.php";
 
 
     try {
-        $sql = "SELECT * FROM users WHERE (email='$email') AND password='$password'";
+        $sql = "SELECT * FROM users WHERE (email='$email'  OR username='$username ') AND password='$password'";
     
         $q = $conn->query($sql);
         $q->setFetchMode(PDO::FETCH_ASSOC);
