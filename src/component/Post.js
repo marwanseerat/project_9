@@ -1,6 +1,7 @@
 import React from 'react'
 import './Post.css'
 import axios from 'axios';
+import Profile from './Profile/Profile';
 
 class Post extends React.Component{
   
@@ -43,11 +44,13 @@ class Post extends React.Component{
     render(){
         return(
           <>
-          {/* <Profile /> */}
           <div className="container gedf-wrapper " style={{marginTop:'20vh'}}>
             <div className="row">
+              <div className="col-md-3">
+              <Profile/>
+              </div>
              
-              <div className="col-md-6 gedf-main"  style={{width:'103vh' , marginLeft:'30vh'}}>
+              <div className="col-md-6 gedf-main" >
                 {/*- \\\\\\\Post*/}
                 <div className="card gedf-card">
                   <div className="card-header">
@@ -69,19 +72,7 @@ class Post extends React.Component{
                           Make a publication
                         </a>
                       </li>
-                      <li className="nav-item">
-                        <a
-                          className="nav-link"
-                          id="images-tab"
-                          data-toggle="tab"
-                          role="tab"
-                          aria-controls="images"
-                          aria-selected="false"
-                          href="#images"
-                        >
-                          Images
-                        </a>
-                      </li>
+                      
                     </ul>
                   </div>
                   <div className="card-body">
@@ -107,59 +98,16 @@ class Post extends React.Component{
                           />
                         </div>
                       </div>
-                      <div
-                        className="tab-pane fade"
-                        id="images"
-                        role="tabpanel"
-                        aria-labelledby="images-tab"
-                      >
-                        <div className="form-group">
-                          <div className="custom-file">
-                            <input
-                              type="file"
-                              className="custom-file-input"
-                              id="customFile"
-                            />
-                            <label className="custom-file-label" htmlFor="customFile">
-                              Upload image
-                            </label>
-                          </div>
-                        </div>
-                        <div className="py-4" />
-                      </div>
+                     
                     </div>
+                    <br/>
                     <div className="btn-toolbar justify-content-between">
                       <div className="btn-group">
                         <button type="submit" className="btn btn-primary" onClick={e => this.handleFormSubmit(e)}>
                           share
                         </button>
                       </div>
-                      <div className="btn-group">
-                        <button
-                          id="btnGroupDrop1"
-                          type="button"
-                          className="btn btn-link dropdown-toggle"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <i className="fa fa-globe" />
-                        </button>
-                        <div
-                          className="dropdown-menu dropdown-menu-right"
-                          aria-labelledby="btnGroupDrop1"
-                        >
-                          <a className="dropdown-item" href="#">
-                            <i className="fa fa-globe" /> Public
-                          </a>
-                          <a className="dropdown-item" href="#">
-                            <i className="fa fa-users" /> Friends
-                          </a>
-                          <a className="dropdown-item" href="#">
-                            <i className="fa fa-user" /> Just me
-                          </a>
-                        </div>
-                      </div>
+                    
                     </div>
                   </div>
                 </div>
@@ -176,7 +124,7 @@ class Post extends React.Component{
                           <img
                             className="rounded-circle"
                             width={45}
-                            src="https://picsum.photos/50/50"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFqZETyia_OGRMi21eSTZENOZRYGzGmHqrA&usqp=CAU"
                             alt=""
                           />
                         </div>
@@ -243,6 +191,43 @@ class Post extends React.Component{
                 {/* Post /////*/}
               </div>
             
+
+              <div class="col-md-3">
+                <div class="card gedf-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="card gedf-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+                    <div class="card gedf-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    </div>
+
+
+
             </div>
           </div>
         </>
