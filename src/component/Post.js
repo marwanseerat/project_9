@@ -1,11 +1,9 @@
 import React from 'react'
 import './Post.css'
 import axios from 'axios';
-import Profile from './profile';
+// import Profile from './Profile/Profile';
+
 class Post extends React.Component{
-
-   
-
 
     state = {
     topic:'',
@@ -46,7 +44,7 @@ class Post extends React.Component{
     render(){
         return(
           <>
-          
+          {/* <Profile /> */}
           <div className="container gedf-wrapper " style={{marginTop:'20vh'}}>
             <div className="row">
              

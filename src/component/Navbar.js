@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+// import { useEffect } from 'react';
 import {Link} from "react-router-dom";
+
 function Navbar() {
+
+// useEffect (()=>{
+//   window.location.href = '/reg';
+// },[sessionStorage.getItem('user_info')])
   return (
     <div>
   <meta charSet="utf-8" />
@@ -59,7 +65,7 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarCollapse">
       <div className="navbar-nav ms-auto p-4 p-lg-0 collapse navbar-collapse justify-content-md-center">
         
-        <Link to= '/' className="nav-item nav-link active">
+        <Link to= '/' className="nav-item nav-link ">
       
           Home
     
@@ -89,11 +95,21 @@ function Navbar() {
        
       </div>
 
+{sessionStorage.getItem("user_info") && sessionStorage.getItem("user_info") != ''
+? <Link to= '/login' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" onClick={(e)=>{e.      preventDefault(); 
+  sessionStorage.clear();
+  window.location.href = '/login';
+          }}> 
+     Logout
+        <i className="fa fa-arrow-right ms-3" />
+        </Link>
 
-     <Link to= '/reg' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> 
+        :<Link to= '/login' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> 
      Join Now
         <i className="fa fa-arrow-right ms-3" />
         </Link>
+}       
+     
 
      
     </div>

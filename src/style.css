@@ -102,6 +102,8 @@
     color: var(--primary);
 }
 
+
+
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;

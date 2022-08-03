@@ -1,16 +1,21 @@
 <?php
-include_once "connect.php";
+header("Access-Control-Allow-Origin: *");
+
+$dbsn = "localhost";
+$dbun = "root";
+$password = "";
+$dbname = "project9";
+
+$dsn ="mysql:host=$dbsn;dbname=$dbname";
+$conn = new PDO($dsn,$dbun,$password);
 
 $username  = $_REQUEST['username'];
 $email     = $_REQUEST['email'];
 $password  = md5($_REQUEST['password']);
-$avatar    = $_REQUEST['avatar'];
+$sql = "INSERT INTO users (username,email,password) VALUES (?,?,?)";
+$result  = $conn->prepare($sql);
 
-$sql = "INSERT INTO users (username,email,password,avatar) VALUES ('$username','$email','$password',$avatar);";
-
-mysqli_query($conn,$sql);
-
-$conn->close();
+$result->execute([$username,$email,$password]);
 
 
 ?>

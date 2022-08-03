@@ -11,8 +11,9 @@ import './style.css'
 import Post from "./component/Post";
 import './style.css'
 import LoginAndReg from "./Login/LoginAndReg";
+import Register from "./Login/Register";
 import Welcome from "./Login/Welcome";
-import Profile from "./component/profile";
+import Profile from "./component/Profile/Profile";
 
 
 
@@ -32,10 +33,12 @@ function App() {
         <Route path="/quiz" element={<Quiz/>}/>
         <Route path="/Intreviewer" element={<Intreviewer/>}/>
         <Route path="/question/:cat/:diff/:comp" element={<Questions />}/>      
-        <Route path="/reg" element={<LoginAndReg />}/>
+        <Route path="/login" element={<LoginAndReg />}/>
+        <Route path="/register" element={<Register />}/>
         <Route path="/post" element={<Post />}/>
         <Route path="/welcome" element={<Welcome />}/>
-        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/Profile" element={ <Profile />}/>
+       
         </Routes>
     </BrowserRouter>
      <Footer/>

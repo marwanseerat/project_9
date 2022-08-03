@@ -5,10 +5,10 @@ function Testimonial() {
   return (
     <div>
       <div className="text-center">
-        <h6 className="section-title bg-white text-center text-primary px-3">
+        <h4 className="section-title bg-white text-center text-primary px-3 mb-5">
           Testimonial
-        </h6>
-        <h1 className="mb-5">Our Students Say!</h1>
+        </h4>
+        {/* <h1 className="mb-5">Our Students Say!</h1> */}
         </div> 
     
         <div className="wrapper">
