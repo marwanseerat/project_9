@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *"); //add this CORS header to enable any d
 $host = "localhost"; 
 $user = "root"; 
 $password = ""; 
-$dbname = "project9"; 
+$dbname = "project_9"; 
 $id = '';
  
 $con = mysqli_connect($host, $user, $password,$dbname);

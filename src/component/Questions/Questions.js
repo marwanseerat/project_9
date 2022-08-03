@@ -40,8 +40,8 @@ function Questions() {
                         
                         <div style={{ width: '75%' , marginLeft:'10%' }}>
                                         <Card className="text-center">
-                                            <Card.Header> 
-                                            <small>{item.question_category}</small>
+                                            <Card.Header style={{backgroundColor:'#06BBCC' , color:'white'}}> 
+                                            <strong>{item.question_category}</strong>
                                             <br></br>
                                             Question Number {item.question_id}
                                             </Card.Header>
@@ -60,8 +60,8 @@ function Questions() {
                                           
                                             </Card.Body>
                                             {show &&
-                                            <Card.Footer className="text-muted">cprrect answer is :
-                                            <br></br> {item.correct_answer}</Card.Footer>
+                                            <Card.Footer class="alert alert-info"><strong>Correct Answer is :
+                                            {item.correct_answer}</strong></Card.Footer>
                                              }
                                         </Card>
                                         <br></br>
