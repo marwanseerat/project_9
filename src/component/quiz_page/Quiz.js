@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+
 export default function Quiz() {
 
   const [question_category, setCategory] = useState('');
@@ -15,9 +16,17 @@ export default function Quiz() {
   const DifficultyHandel = (e) => { setDifficulty(e.target.value) }
   const companyHandel = (e) => { setcompany(e.target.value) }
 
+  const Color = (id)=>{
+    if(id ==='Easy'){
+      return '#59CE8F';
+    }else if(id === 'Medium'){
+      return '#FEB139';
+    }else{
+      return '#EB1D36';
+    }
+  }
 
   useEffect(() => {
-
     axios.get("http://localhost/project_9/php_crud/quiz.php?question_category=" + question_category + "&question_difficulty=" + question_difficulty + "&company=" + company).then((res) => {
       console.log(typeof res.data);
       setResult(res.data);
@@ -118,43 +127,38 @@ export default function Quiz() {
           </div>
         </div>
 
-        <div className="container mt-5 d-flex flex-wrap justify-content-around">
+        <div className="container mt-5 d-flex flex-wrap justify-content-around"> 
+           <div className="row">
+
           {result.map((data, key) => {
             return (
-              <div className="container mt-5 mb-3">
-                <div className="row">
-                  <div className="col-md-4">
-                    <div className="card p-3 mb-2" style={{ backgroundColor: 'white', color: 'black', borderRadius: '30px' }} ><strong>Company : &nbsp;{data.company}</strong>
-                      <div className="d-flex justify-content-between">
-                        <div className="d-flex flex-row align-items-center">
-                          <div className="icon">
-                            {" "}
-                            <i className="bx bxl-mailchimp" />{" "}
-                          </div>
-                          <div className="ms-2 c-details">
-                            <h6 className="mb-0"></h6> <span></span>
-                          </div>
-                        </div>
+                  <div className="col-md-4 mb-3" >
+                    <div className="card p-3 mb-2" style={{color:'black', borderRadius: '15px' ,textAlign:'center' }}>
+
+                      <h4><strong>Company : {data.company}</strong></h4>
+                      <div className="text-center">
+
+                        
+
                         <div className="badge">
                           {" "}
-                          <span>Difficulty :  &nbsp;{data.question_difficulty}</span>{" "}
+                          <h6><strong >Type :  &nbsp;{data.question_category}</strong></h6>
+                        </div>
+                        <br></br>
+                        <div className="badge">
+                          {" "}
+                          <h6><strong >Difficulty :  &nbsp;<span style={{ color: Color(data.question_difficulty) }}>{data.question_difficulty}</span></strong></h6>
                         </div>
                       </div>
-                      <div className="mt-5">
-                        <h3 className="heading">
-                          Difficulty :  &nbsp;{data.question_difficulty}
-                          <br />
-                          {data.question_category}
-                        </h3>
-                        <div className="mt-5">
-                          <div className="progress" style={{ backgroundColor: '#06BBCC' }}>
+                      
+                      <div className="mt-3">
+                          <div className="progress" style={{ backgroundColor: Color(data.question_difficulty),height: "8px" }}>
                             <div
+                              id={data.question_difficulty}
                               className="progress-bar"
                               role="progressbar"
-                              style={{ width: "50%" }}
-                              aria-valuenow={50}
-                              aria-valuemin={0}
-                              aria-valuemax={100}
+                            
+                        
                             />
                           </div>
                           <div className="mt-3">
@@ -165,18 +169,16 @@ export default function Quiz() {
                             <Link to={{
                               pathname: "/question/" + data.question_category + '/' + data.question_difficulty + '/' + data.company,
                             }}>
-                              <button className='btn btn-primary' style={{ borderRadius: '5px' }}> View Question</button>
+                              <button className='btn btn-primary' style={{ borderRadius: '5px' , background: '#B2B1B9' , border :'white solid '}}> View Question</button>
                             </Link>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
             )
-          })}
+          })} 
+                         </div>
+
         </div>
       </>
 

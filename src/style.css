@@ -6,7 +6,10 @@
 }
 
 
-
+/* .hov:hover{
+    background-color: #06BBCC;
+    color:rgb(2, 2, 2)
+} */
 .fw-medium {
     font-weight: 600 !important;
 }
