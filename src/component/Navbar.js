@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+// import { useEffect } from 'react';
 import {Link} from "react-router-dom";
+
 function Navbar() {
+
+// useEffect (()=>{
+//   window.location.href = '/reg';
+// },[sessionStorage.getItem('user_info')])
   return (
     <div>
   <meta charSet="utf-8" />
@@ -89,11 +95,21 @@ function Navbar() {
        
       </div>
 
+{sessionStorage.getItem("user_info") && sessionStorage.getItem("user_info") != ''
+? <Link to= '/reg' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" onClick={(e)=>{e.      preventDefault(); 
+  sessionStorage.clear();
+  window.location.href = '/reg';
+          }}> 
+     Logout
+        <i className="fa fa-arrow-right ms-3" />
+        </Link>
 
-     <Link to= '/reg' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> 
+        :<Link to= '/reg' className="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> 
      Join Now
         <i className="fa fa-arrow-right ms-3" />
         </Link>
+}       
+     
 
      
     </div>

@@ -127,10 +127,8 @@ console.log(errorLog.error);
             <span className='err'>{error.confirmPassError}</span>
           </p>
 
-         
-
           <p className="signin button">
-            {(error.usernameError || error.emailError || error.passError || error.confirmPassError || error.avatarError)
+            {(error.usernameError || error.emailError || error.passError || error.confirmPassError)
             ?<input type="submit" defaultValue="Sign up" disabled/>
             :<input type="submit" defaultValue="Sign up"/>
             }
