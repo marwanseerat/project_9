@@ -12,7 +12,7 @@ import Post from "./component/Post";
 import './style.css'
 import LoginAndReg from "./Login/LoginAndReg";
 import Welcome from "./Login/Welcome";
-import Profile from "./component/profile";
+import Profile from "./component/Profile/Profile";
 
 
 
@@ -35,7 +35,8 @@ function App() {
         <Route path="/reg" element={<LoginAndReg />}/>
         <Route path="/post" element={<Post />}/>
         <Route path="/welcome" element={<Welcome />}/>
-        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/Profile" element={ <Profile />}/>
+       
         </Routes>
     </BrowserRouter>
      <Footer/>

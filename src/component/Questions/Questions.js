@@ -15,8 +15,9 @@ function Questions() {
         const loadquestion = async () => {
             const response = await axios.get("http://localhost/project_9/php_crud/view.php?question_category="+ params.cat+"&question_difficulty=" + params.diff+"&company="+params.comp).then((data) => {
                 console.log(data.data);
-                setquestion(data.data);
-            });
+                setquestion(data.data); 
+            });                
+
         };
         loadquestion();
     }, []);

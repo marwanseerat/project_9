@@ -127,11 +127,6 @@ console.log(errorLog.error);
             <span className='err'>{error.confirmPassError}</span>
           </p>
 
-<<<<<<< HEAD
-=======
-         
-
->>>>>>> 038599d5943946ab5638b309cb1bb8110a9c9247
           <p className="signin button">
             {(error.usernameError || error.emailError || error.passError || error.confirmPassError)
             ?<input type="submit" defaultValue="Sign up" disabled/>
