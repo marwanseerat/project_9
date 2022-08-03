@@ -10,8 +10,8 @@ function Footer() {
       Wajih<span>Company</span>
     </h3>
     <p className="footer-links">
-      <a href="../Home">Home</a>·<a href="#">Blog</a>·
-      <a href="./About">About</a>.<a href="#">Contact</a>
+      <a href="/">Home</a>·<a href="/post">Blog</a>·
+      <a href="/About">About</a>.<a href="/Contact">Contact</a>
     </p>
     <p className="footer-company-name">WajihTeam © 2021</p>
   </div>
@@ -29,7 +29,7 @@ function Footer() {
     <div>
       <i className="fa fa-envelope" />
       <p>
-        <a href="mailto:support@company.com">Wajih Companys@gmail.com</a>
+        <a href="mailto:support@company.com">WajihCompanys@gmail.com</a>
       </p>
     </div>
   </div>

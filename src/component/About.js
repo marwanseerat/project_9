@@ -6,7 +6,6 @@ function About() {
   return (
     <div>
         <>
-  
   {/* Header Start */}
   <div className="container-fluid bg-primary py-5 mb-5 page-header">
     <div className="container py-5">
@@ -120,16 +119,16 @@ function About() {
   <div className="container-xxl py-5">
     <div className="container">
       <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h6 className="section-title bg-white text-center text-primary px-3">
-         The Team
-        </h6>
-        <h1 className="mb-5"> Wajih Team</h1>
+        <h4 className="section-title bg-white text-center text-primary px-3 mb-5">
+        Wajih Team
+        </h4>
+        {/* <h1 className="mb-5"> Wajih Team</h1> */}
       </div>
       <div className="row g-4">
         <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div className="team-item bg-light">
             <div className="overflow-hidden">
-              <img className="img-fluid" src="img/ibrahim.png" alt="" />
+              <img className="img-fluid" src="img/ibrahim.png" style={{height:'45vh'}} alt="" />
             </div>
             <div
               className="position-relative d-flex justify-content-center"

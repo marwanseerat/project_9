@@ -11,7 +11,7 @@ function HeroSection() {
 		<div class="col-lg-6">
 			<div class="lc-block mb-3">
 				<div editable="rich">
-					<h2 class="fw-bold display-5">Technical Interview Questions for Freshers</h2>
+					<h2 class="fw-bold display-5">Technical Interview Questions for Job seeker</h2>
 				</div>
 			</div>
 
@@ -22,7 +22,7 @@ function HeroSection() {
 				</div>
 			</div>
 
-			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">ِApply As Interviewer</a>
+			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="/Intreviewer" role="button">ِApply As Interviewer</a>
 				<a class="btn btn-outline-secondary px-4" href="/quiz" role="button">Apply As Job Seeker</a>
 			</div>
 

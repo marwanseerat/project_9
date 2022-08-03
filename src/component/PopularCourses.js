@@ -7,10 +7,10 @@ function PopularCourses() {
          <div className="container-xxl py-5">
     <div className="container">
       <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h6 className="section-title bg-white text-center text-primary px-3">
-          Videos
-        </h6>
-        <h1 className="mb-5">Popular Video</h1>
+        <h4 className="section-title bg-white text-center text-primary px-3 mb-5">
+        Popular Videos
+        </h4>
+        {/* <h1 className="mb-5">Popular Video</h1> */}
       </div>
       <div className="row g-4 justify-content-center">
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
