@@ -39,7 +39,7 @@
     /* Webkit only */
     background: -webkit-repeating-linear-gradient(-45deg, #12535d, #12535d 20px, #406f76 20px, #406f76 40px, #12535d 40px);
    
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
   }
   
   /* #wrapper h1:after {
