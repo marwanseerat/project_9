@@ -1,10 +1,9 @@
 import React from 'react'
 import './Post.css'
 import axios from 'axios';
-// import Profile from './Profile/Profile';
 
 class Post extends React.Component{
-
+  
     state = {
     topic:'',
     posts: []

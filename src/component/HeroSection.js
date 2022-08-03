@@ -23,7 +23,7 @@ function HeroSection() {
 			</div>
 
 			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">ِApply As Interviewer</a>
-				<a class="btn btn-outline-secondary px-4" href="#" role="button">Apply As Job Seeker</a>
+				<a class="btn btn-outline-secondary px-4" href="/quiz" role="button">Apply As Job Seeker</a>
 			</div>
 
 		</div>

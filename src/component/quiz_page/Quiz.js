@@ -12,7 +12,7 @@ export default function Quiz() {
   console.log(result);
 
   const CategoryHandel = (e) => { setCategory(e.target.value) }
-  const DifficultyHandel = (e) => { setDifficulty(e.target.value) }
+  const DifficultyHandel = (e) => { setDifficulty(e.target.value)  }
   const companyHandel = (e) => { setcompany(e.target.value) }
 
 
@@ -29,7 +29,7 @@ export default function Quiz() {
  
   return (
 <>
-{/* Header Start */}
+
 <div className="container-fluid bg-primary py-5 mb-5 page-header">
     <div className="container py-5">
       <div className="row justify-content-center">
