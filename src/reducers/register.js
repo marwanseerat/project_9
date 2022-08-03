@@ -46,7 +46,7 @@ const registerReducer=(state={usernameError:'',emailError:'',passError:'',confir
             if(state.usernameError == null && state.emailError == null && state.passError == null && state.confirmPassError == null) {
 
                 axios.post('http://localhost/project_9/php_crud/register.php?username='+state.username+'&email='+state.email+'&password='+state.password)
-                window.location.href = "/";
+                window.location.href = "/login";
  
             }else{
                 return console.log('error');
