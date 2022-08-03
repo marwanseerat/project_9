@@ -31,7 +31,7 @@ function Profile() {
             >
                 SEE INTREVEIW QUESTIONS            
             </button></a>
-            <div className="d-flex justify-content-between text-center mt-5 mb-2">
+            {/* <div className="d-flex justify-content-between text-center mt-5 mb-2">
               <div>
                 <p className="mb-2 h5">Microsoft</p>
                 <p className="text-muted mb-0">Wallets Balance</p>
@@ -44,7 +44,7 @@ function Profile() {
                 <p className="mb-2 h5">Amazon</p>
                 <p className="text-muted mb-0">Total Transactions</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       {/* </div> */}

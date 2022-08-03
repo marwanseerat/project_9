@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *"); //add this CORS header to enable any d
 $host = "localhost"; 
 $user = "root"; 
 $password = ""; 
-$dbname = "project_9"; 
+$dbname = "project9"; 
 $id = '';
  
 $con = mysqli_connect($host, $user, $password,$dbname);
@@ -22,7 +22,7 @@ switch ($method) {
       break;
     case 'POST':
         $topic              = $_REQUEST['topic'];
-         $sql = "insert into experience (topic) values (' $topic')"; 
+                 $sql = "insert into experience (topic) values (' $topic')"; 
       break;
 }
  

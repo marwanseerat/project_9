@@ -3,6 +3,11 @@ import './Post.css'
 import axios from 'axios';
 import Profile from './Profile/Profile';
 
+let user_info= sessionStorage.getItem("user_info");
+const info = user_info.split(' ');
+const email= info[0];
+const username= info[1];
+
 class Post extends React.Component{
   
     state = {
@@ -10,6 +15,7 @@ class Post extends React.Component{
     posts: []
     }
 
+   
     componentDidMount() {
         const url = 'http://localhost/project_9/php_crud/insertPost.php'
         axios.get(url).then(response => response.data)
@@ -24,6 +30,7 @@ class Post extends React.Component{
         console.log("handle request ");
         let formData = new FormData();
         formData.append('topic', this.state.topic)
+        formData.append('time', this.state.time)
         axios({
             method: 'post',
             url: 'http://localhost/project_9/php_crud/insertPost.php',
@@ -129,8 +136,8 @@ class Post extends React.Component{
                           />
                         </div>
                         <div className="ml-2">
-                          <div className="h5 m-0">@LeeCross</div>
-                          <div className="h7 text-muted">Miracles Lee Cross</div>
+                          <div className="h5 m-0">{username}</div>
+                          <div className="h7 text-muted">{username}.Wajih.com</div>
                         </div>
                       </div>
                       <div>
@@ -167,24 +174,14 @@ class Post extends React.Component{
                   <div className="card-body">
                     <div className="text-muted h7 mb-2">
                       {" "}
-                      <i className="fa fa-clock-o" /> Hace 40 min
+                      <i className="fa fa-clock-o" /> {post.created_at.split(' ')[0]}
                     </div>
                 
                     <p className="card-text">
                     { post.topic}
                     </p>
                   </div>
-                  <div className="card-footer">
-                    <a href="#" className="card-link">
-                      <i className="fa fa-gittip" /> Like
-                    </a>
-                    <a href="#" className="card-link">
-                      <i className="fa fa-comment" /> Comment
-                    </a>
-                    <a href="#" className="card-link">
-                      <i className="fa fa-mail-forward" /> Share
-                    </a>
-                  </div>
+                
                 </div>
                 </div>))}
                
@@ -194,20 +191,21 @@ class Post extends React.Component{
 
               <div class="col-md-3">
                 <div class="card gedf-card">
+                
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <img  className="img-fluid  w-10 h-10 mb-3" src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/1200px-Orange_logo.svg.png' style={{height:'10vh'  }}></img> <span style={{fontSize:'30px'  }}>Orange</span>
+                        <h6 class="card-subtitle mb-2 text-muted">Interview</h6>
+                        <p class="card-text">Orange Jordan is the leading operator of integrated communications services in the Kingdom, with a broad lineup of fixed, mobile, internet and data services
                             card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                       
                     </div>
                 </div>
                 <div class="card gedf-card">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                         
+                        <img  className="img-fluid  w-10 h-10 mb-3" src='https://avatars.githubusercontent.com/u/6154722?s=280&v=4' style={{height:'10vh'  }}></img> <span style={{fontSize:'30px'  }}>Microsoft</span>
+                            <h6 class="card-subtitle mb-2 text-muted">Interview</h6>
+                            <p class="card-text">Our mission is to enable people and businesses throughout the world to realize their full potential by creating technology that transforms the way people work, play, and communicate. 
                                 card's content.</p>
                             <a href="#" class="card-link">Card link</a>
                             <a href="#" class="card-link">Another link</a>
@@ -216,9 +214,9 @@ class Post extends React.Component{
 
                     <div class="card gedf-card">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <img  className="img-fluid  w-10 h-10 mb-3" src='https://policyviz.com/wp-content/uploads/2020/12/amazon-logo-square-285x300.jpg' style={{height:'10vh'  }}></img> <span style={{fontSize:'30px'  }}>Amazon</span>
+                            <h6 class="card-subtitle mb-2 text-muted">Interview</h6>
+                            <p class="card-text">mazon.com is a vast Internet-based enterprise that sells books, music, movies, housewares, electronics, toys, and many other goods, either directly or as the middleman between other retailers and Amazon.com’s millions of customers.
                                 card's content.</p>
                             <a href="#" class="card-link">Card link</a>
                             <a href="#" class="card-link">Another link</a>
