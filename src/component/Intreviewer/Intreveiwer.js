@@ -53,8 +53,13 @@ function Intreviewer() {
     }
     return (
 
+        
+
         <>
+
+
             {/* Header Start */}
+            
             <div className="container-fluid bg-primary py-5 mb-5 page-header">
             <div className="container py-5">
             <div className="row justify-content-center">
@@ -86,10 +91,16 @@ function Intreviewer() {
             </div>
             </div>
             </div>
+            <div className="container-xxl py-5">
+    <div className="container">
+      <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 className="section-title bg-white text-center text-primary px-3">
+          Write Question
+        </h6>
             {/* Header End */}
-        <form className="container" style={{marginTop : '5%' , width:'50%'}}>
+        <form className="row g-5" style={{marginTop : '5%' , width:'50%' , marginLeft : '300px'}}>
 
-            <div className="form-group">
+            <div className="form-group col-md-6">
                 <label htmlFor="Category">Category </label>
                 <select id="Category" className="form-control" onChange={CategoryHandel} >
                     <option>Full Stack</option>
@@ -102,7 +113,7 @@ function Intreviewer() {
 
             <br></br>
 
-            <div className="form-group">
+            <div className="form-group col-md-6">
                 <label>Type  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <select className="form-control" name="Type" onChange={TypeHandel} >
                     <option value="Multiple Choice">Multiple Choice</option>
@@ -115,7 +126,7 @@ function Intreviewer() {
             <br></br>
  
  
-            <div className="form-group">
+            <div className="form-group col-md-6">
             <label htmlFor="Category">Difficulty &nbsp; </label>
             <select id="Category" className="form-control"  onChange={DifficultyHandel} >
           <option value=''>General</option>
@@ -127,7 +138,7 @@ function Intreviewer() {
         </div>
         <br></br>
 
-        <div className="form-group">
+        <div className="form-group col-md-6">
         <label htmlFor="Category">Company &nbsp; </label>
         <select id="Category" className="form-control" name="company" onChange={companyHandel}>
           <option value=''>General</option>
@@ -187,9 +198,13 @@ function Intreviewer() {
                 
           )
         })}
-            <button className='btn btn-primary' style={{borderRadius:'5px'}} onClick={addFields}>Add More</button>
-            <input type="submit" value="submit" style={{borderRadius:'5px' , marginLeft :'75%'}}  className="btn btn-primary" onClick={clickHandel} />
+            <button className='btn btn-primary col-md-4' style={{borderRadius:'5px' , marginLeft :'10%' }} onClick={addFields}>Add More</button>
+            <input type="submit" value="submit" style={{borderRadius:'5px' , marginLeft :'13%'}}  className="btn btn-primary col-md-4" onClick={clickHandel} />
         </form>
+</div>
+</div>
+</div>
+
         </>
     );
 }
