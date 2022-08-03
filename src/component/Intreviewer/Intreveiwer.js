@@ -122,7 +122,7 @@ function Intreviewer() {
                 </select>
                
             </div>
- {Type}
+
             <br></br>
  
  
