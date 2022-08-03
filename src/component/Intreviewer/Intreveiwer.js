@@ -114,15 +114,13 @@ function Intreviewer() {
             <br></br>
 
             <div className="form-group col-md-6">
-                <label>Type  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label>Type </label>
                 <select className="form-control" name="Type" onChange={TypeHandel} >
                     <option value="Multiple Choice">Multiple Choice</option>
                     <option value="True / False">True / False</option>
-
                 </select>
                
             </div>
-
             <br></br>
  
  

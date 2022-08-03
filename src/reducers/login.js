@@ -30,8 +30,6 @@ const loginReducer=(state={error:''},action)=>{
                     window.location.href = "/";
                 }
                 return {...state, error: 'Username/ email or password is invalid'}
-            
-  
             };
             loadInfo();
             

@@ -1,5 +1,5 @@
 <?php
-include_once "./connect.php";
+include_once "connect.php";
 
 $Created_by = $_REQUEST['Created_by'];
 $company = $_REQUEST['company'];
