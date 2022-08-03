@@ -8,11 +8,9 @@ function Profile() {
     return (
 
 <>
-<section className="vh-100" style={{ backgroundColor: "#eee" }}>
-  <div className="container py-5 h-100">
-    <div className="row d-flex justify-content-center align-items-center h-100">
-      <div className="col-md-12 col-xl-4">
-        <div className="card" style={{ borderRadius: 15 }}>
+    <div className="row d-flex justify-content-left align-items-center h-60" style={{width: '44vh'}}>
+      {/* <div className="col-md-12 col-xl-4"> */}
+        <div className="card" style={{ borderRadius: 15 , left: '-16%' }}>
           <div className="card-body text-center">
             <div className="mt-3 mb-4">
               <img
@@ -49,10 +47,10 @@ function Profile() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
-  </div>
-</section>
+  
+
 
 </>
 )
