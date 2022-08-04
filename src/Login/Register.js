@@ -90,7 +90,7 @@ console.log(errorLog.error);
             }
           </p> */}
           <a href='/login'>
-          <button type='submit'>Sign Up</button>
+          <button type='submit' className="reg" style={{marginLeft:'35vh'}}>Sign Up</button>
           </a>
           <p className="change_link">
           Already Have an Account

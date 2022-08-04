@@ -82,15 +82,15 @@ function Navbar() {
         </Link>
        
         <Link to= '/Intreviewer'className="nav-item nav-link">
-        Intreviewer Question
+        Apply a Question
         </Link>
 
         <Link to= '/quiz' className="nav-item nav-link">
-          Interview 
+          Quiz
         </Link>
 
         <Link to= '/post' className="nav-item nav-link">
-         Blog
+         Profile
         </Link>
        
       </div>

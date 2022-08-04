@@ -3,10 +3,10 @@ import './Post.css'
 import axios from 'axios';
 import Profile from './Profile/Profile';
 
-let user_info= sessionStorage.getItem("user_info");
-const info = user_info.split(' ');
-const email= info[0];
-const username= info[1];
+// let user_info= sessionStorage.getItem("user_info");
+// const info = user_info.split(' ');
+// const email= info[0];
+// const username= info[1];
 
 class Post extends React.Component{
   
@@ -136,10 +136,11 @@ class Post extends React.Component{
                           />
                         </div>
                         <div className="ml-2">
-                          <div className="h5 m-0">{username}</div>
-                          <div className="h7 text-muted">{username}.Wajih.com</div>
+                          <div className="h5 m-0"></div>
+                          <div className="h7 text-muted">.Wajih.com</div>
                         </div>
                       </div>
+                      {/* {username} */}
                       <div>
                         <div className="dropdown">
                           <button
@@ -207,8 +208,7 @@ class Post extends React.Component{
                             <h6 class="card-subtitle mb-2 text-muted">Interview</h6>
                             <p class="card-text">Our mission is to enable people and businesses throughout the world to realize their full potential by creating technology that transforms the way people work, play, and communicate. 
                                 card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            
                         </div>
                     </div>
 
@@ -218,8 +218,7 @@ class Post extends React.Component{
                             <h6 class="card-subtitle mb-2 text-muted">Interview</h6>
                             <p class="card-text">mazon.com is a vast Internet-based enterprise that sells books, music, movies, housewares, electronics, toys, and many other goods, either directly or as the middleman between other retailers and Amazon.com’s millions of customers.
                                 card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                          
                         </div>
                     </div>
                     </div>

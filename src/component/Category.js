@@ -5,7 +5,7 @@ function Category() {
     <div className="container-xxl py-5 category">
     <div className="container">
       <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h4 className="section-title bg-white text-center text-primary px-3">
+        <h4 className="section-title bg-white text-center text-primary px-3 mb-5">
           Categories
         </h4>
         {/* <h1 className="mb-5">Courses Categories</h1> */}
