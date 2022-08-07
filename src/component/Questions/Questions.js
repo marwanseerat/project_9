@@ -58,7 +58,6 @@ function Questions() {
                                                         <li>{A[3]}</li>
                                                     </ul>
                                                 </Card.Text>
-                                          
                                             </Card.Body>
                                             {show &&
                                             <Card.Footer class="alert alert-info"><strong>Correct Answer is :
