@@ -26,6 +26,16 @@ export default function Quiz() {
     }
   }
 
+  const Company = (id)=>{
+    if(id ==='Orange'){
+      return 'url(https://en.ammonnews.net/image.php?token=d4f9ec09c16d39220d542d7f637afc50&c=6402980&size=medium)';
+    }else if(id === 'Microsft'){
+      return 'url(https://cdn-icons-png.flaticon.com/512/732/732221.png)';
+    }else{
+      return 'url(https://policyviz.com/wp-content/uploads/2020/12/amazon-logo-square-285x300.jpg)';
+    }
+  }
+
   useEffect(() => {
     axios.get("http://localhost/project_9/php_crud/quiz.php?question_category=" + question_category + "&question_difficulty=" + question_difficulty + "&company=" + company).then((res) => {
       console.log(typeof res.data);
@@ -38,6 +48,9 @@ export default function Quiz() {
 
   return (
 <>
+
+{sessionStorage.getItem("user_info") && sessionStorage.getItem("user_info") == ''
+? window.location.href='/login' :<div>allgood</div>}
 
       <div className="container-fluid bg-primary py-5 mb-5 page-header">
         <div className="container py-5">
@@ -94,10 +107,10 @@ export default function Quiz() {
         {/* Header End */}
         <div className='container' style={{ marginTop: '7%', width: '50%' }}>
           <h1>Please Select Your Standards:</h1>
-
-          <div className="form-group">
-            <label htmlFor="Category">Category &nbsp; </label>
-            <select id="Category" className="form-control" onChange={CategoryHandel}>
+<div className= "row g-5">
+          <div className="form-group col-md-6">
+            <label htmlFor="Category" className="form-label">Category &nbsp; </label>
+            <select id="Category" className="form-select" onChange={CategoryHandel}>
               <option value=''>Full stack</option>
               <option value='Front-End'>Front-End</option>
               <option value='Back-End'>Back-End</option>
@@ -105,19 +118,20 @@ export default function Quiz() {
             </select>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="Category">Difficulty &nbsp; </label>
-            <select id="Category" className="form-control" onChange={DifficultyHandel} >
+          <div className="form-group col-md-6">
+            <label htmlFor="Category" className="form-label">Difficulty &nbsp; </label>
+            <select id="Category" className="form-select" onChange={DifficultyHandel} >
               <option value=''>General</option>
               <option value='Easy'>Easy</option>
               <option value='Medium'>Medium</option>
               <option value='Hard'>Hard</option>
 
             </select>
+          </div> 
 
-          </div> <div className="form-group">
-            <label htmlFor="Category">Company &nbsp; </label>
-            <select id="Category" className="form-control" onChange={companyHandel} >
+          <div className="form-group col-md-6" style={{marginLeft:'25%'}}>
+            <label htmlFor="Category" className="form-label">Company &nbsp; </label>
+            <select id="Category" className="form-select" onChange={companyHandel} >
               <option value=''>General</option>
               <option value='Orange'>Orange</option>
               <option value='Microsoft'>Microsoft</option>
@@ -126,23 +140,23 @@ export default function Quiz() {
             {/* {company} */}
           </div>
         </div>
-
-        <div className="container mt-5 d-flex flex-wrap justify-content-around"> 
+        </div>
+        <div className="container mt-5 d-flex flex-wrap justify-content-between" style={{}}> 
            <div className="row">
 
           {result.map((data, key) => {
             return (
-                  <div className="col-md-4 mb-3" >
-                    <div className="card p-3 mb-2" style={{color:'black', borderRadius: '15px' ,textAlign:'center' }}>
-
-                      <h4><strong>Company : {data.company}</strong></h4>
+                  <div className="col-md-3 " >
+                    <div className="card p-3 mb-2" style={{color:'black' ,textAlign:'center' ,width: '30vh' , }}>
+                    <div style={{ backgroundImage:Company(data.company) , width:'50px' , height:'50px', backgroundRepeat:'no-repeat', backgroundSize:'100% 100%', borderRadius:'3px'}}></div>
+                      <h4 style={{marginTop:'-25%', marginLeft:'23%'}}><strong>{data.company}</strong></h4>
                       <div className="text-center">
 
-                        
+                        <br/>
 
                         <div className="badge">
                           {" "}
-                          <h6><strong >Type :  &nbsp;{data.question_category}</strong></h6>
+                          <h5><strong >Type :  &nbsp;{data.question_category}</strong></h5>
                         </div>
                         <br></br>
                         <div className="badge">
@@ -152,7 +166,7 @@ export default function Quiz() {
                       </div>
                       
                       <div className="mt-3">
-                          <div className="progress" style={{ backgroundColor: Color(data.question_difficulty),height: "8px" }}>
+                          {/* <div className="progress" style={{ backgroundColor: Color(data.question_difficulty),height: "8px" }}>
                             <div
                               id={data.question_difficulty}
                               className="progress-bar"
@@ -160,7 +174,7 @@ export default function Quiz() {
                             
                         
                             />
-                          </div>
+                          </div> */}
                           <div className="mt-3">
                             {" "}
                             <span className="text1">

@@ -102,13 +102,13 @@ function Intreviewer() {
                         </h6>
 
                         {/* Header End */}
-                        <form className="row g-5" style={{ marginTop: '1%', width: '50%', marginLeft: '300px' }}>
+                        <form className= "row g-5" style={{ marginTop: '1%', width: '50%', marginLeft: '300px' }}>
 
 
 
-                            <div className="form-group col-md-6">
-                                <label htmlFor="Category">Category </label>
-                                <select id="Category" className="col-12" onChange={CategoryHandel} data-toggle="dropdown" required><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            <div className="form-group  col-md-6">
+                                <label htmlFor="Category" className="form-label">Category</label>
+                                <select id="Category" className=" form-select " onChange={CategoryHandel} data-toggle="dropdown" required><i class="fa fa-arrow-down" aria-hidden="true"></i>
                                     <option>Full Stack</option>
                                     <option>Front-End</option>
                                     <option>Back-End</option>
@@ -120,8 +120,8 @@ function Intreviewer() {
                             <br></br>
 
                             <div className="form-group col-md-6">
-                                <label>Type </label>
-                                <select className="col-12" name="Type" onChange={TypeHandel} required>
+                                <label class="form-label">Type </label>
+                                <select className="form-select col-12" name="Type" onChange={TypeHandel} required>
                                     <option value="Multiple Choice">Multiple Choice</option>
                                     <option value="True / False">True / False</option>
                                 </select>
@@ -131,8 +131,8 @@ function Intreviewer() {
 
 
                             <div className="form-group col-md-6">
-                                <label htmlFor="Category">Difficulty &nbsp; </label>
-                                <select id="Category" className="col-12" onChange={DifficultyHandel} required>
+                                <label htmlFor="Category" class="form-label">Difficulty &nbsp; </label>
+                                <select id="Category" className="form-select col-12" onChange={DifficultyHandel} required>
                                     <option value=''>General</option>
                                     <option value='Easy' >Easy</option>
                                     <option value='Medium'>Medium</option>
@@ -143,8 +143,8 @@ function Intreviewer() {
                             <br></br>
 
                             <div className="form-group col-md-6">
-                                <label htmlFor="Category">Company &nbsp; </label>
-                                <select id="Category" className="col-12" name="company" onChange={companyHandel} required>
+                                <label htmlFor="Category" class="form-label">Company &nbsp; </label>
+                                <select id="Category" className="form-select col-12" name="company" onChange={companyHandel} required>
                                     <option value=''>General</option>
                                     <option value='Orange'>Orange</option>
                                     <option value='Microsoft'>Microsoft</option>

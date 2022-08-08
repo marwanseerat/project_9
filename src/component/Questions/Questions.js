@@ -10,8 +10,11 @@ function Questions() {
     console.log(params.cat);
     const [question, setquestion] = useState([]);
     const [show, setshow] = useState(false);
+    const [login_show, setloginshow] = useState(false);
+
 
     useEffect(() => {
+       
         const loadquestion = async () => {
             const response = await axios.get("http://localhost/project_9/php_crud/view.php?question_category="+ params.cat+"&question_difficulty=" + params.diff+"&company="+params.comp).then((data) => {
                 console.log(data.data);
@@ -20,6 +23,7 @@ function Questions() {
 
         };
         loadquestion();
+      
     }, []);
 
 
@@ -31,16 +35,29 @@ function Questions() {
 
     const clickHandel = (event) => {
         event.preventDefault();
+        // console.log( sessionStorage.getItem("user_info"));
+        if( sessionStorage.getItem("user_info") && sessionStorage.getItem("user_info") != 0)
+        {
+
         setshow(!show);
+    } 
+    else
+    {
+     setloginshow(!login_show);
+    }
     }
     return (
         <div className='container' style={{marginTop : '10%'}} >
+         
+            
+            
+            
             {question.map((item, key) => {
                 return (
                     <div key={key}>
                         
                         <div style={{ width: '75%' , marginLeft:'10%' }}>
-                                        <Card className="text-center">
+                                        <Card className="text-left">
                                             <Card.Header style={{backgroundColor:'#06BBCC' , color:'white'}}> 
                                             <strong>{item.question_category}</strong>
                                             <br></br>
@@ -49,14 +66,14 @@ function Questions() {
                                             <Card.Body>    
                                               {/* <small>{item.Created_by}</small> */}
                                                 <Card.Title>{item.question}</Card.Title>
-                                                <Card.Text className="commaSeparated">
+                                                <Card.Text className="commaSeparated" style={{TextAlign:'center'}}>
                                                       <p style={{display:'none'}}>{ A = fun(item.question_answer)}</p> 
-                                                    <ul Type="none" style={{TextAlign:'justify'}}>
+                                                    <ol Type="A" >
                                                         <li>{A[0]}</li>
                                                         <li>{A[1]}</li>
                                                         <li>{A[2]}</li>
                                                         <li>{A[3]}</li>
-                                                    </ul>
+                                                    </ol>
                                                 </Card.Text>
                                             </Card.Body>
                                             {show &&
@@ -71,8 +88,19 @@ function Questions() {
                 )
 
             })}
-             <button className="btn btn-primary" style={{marginLeft:'41%' }} onClick={clickHandel} >Show Correct Answer</button>
-                       </div>
+
+{login_show && 
+            <div class="alert alert-info" id="msg">
+                You have to login to view answers 
+                <a href="/login
+                "><button className="btn btn-primary" style={{  marginLeft:'3%' }}>login</button></a>
+            </div>
+            
+            
+            }
+         
+           <button className="btn btn-primary" style={{marginLeft:'41%' }} onClick={clickHandel} >Show Correct Answer</button>
+                       </div>  
     )
 
 }
