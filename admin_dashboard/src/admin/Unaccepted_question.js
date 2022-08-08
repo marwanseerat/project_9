@@ -55,12 +55,9 @@ function Unaccepted_question(props) {
   <nav className="navv">
       
       <ul className="nav__list">
-        <li className="nav__list-item">
-          <Link to="/dashboard" className="nav__item-link">
-           <h2 >Dashboard</h2> </Link>
-        </li>
+        
         <li className="nav__list-item nav__list-item--active">
-          <a href="#" className="nav__item-link">
+          <a href="/" className="nav__item-link">
           Question
           </a>
         </li>
@@ -70,11 +67,7 @@ function Unaccepted_question(props) {
           </Link>
         </li>
       
-        <li className="nav__list-item">
-        <Link to="/loginA" className="nav__item-link">
-            Logout
-          </Link>
-        </li>
+      
       </ul>
     </nav>
     <div className="app-view">

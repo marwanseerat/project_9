@@ -43,12 +43,9 @@ function Users() {
   <div className="app-container">
   <nav className="navv">
       <ul className="nav__list">
-        <li className="nav__list-item">
-          <Link to="/dashboard" className="nav__item-link">
-           <h2 >Dashboard</h2> </Link>
-        </li>
+        
         <li className="nav__item-link">
-          <Link to="/auction" className="nav__item-link">
+          <Link to="/" className="nav__item-link">
           Question
           </Link>
         </li>
@@ -58,11 +55,7 @@ function Users() {
           </a>
         </li>
        
-        <li className="nav__list-item">
-        <Link to="/loginA" className="nav__item-link">
-            Logout
-          </Link>
-        </li>
+       
       </ul>
     </nav>
     <div className="app-view">
