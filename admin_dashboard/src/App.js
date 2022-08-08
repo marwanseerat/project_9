@@ -27,7 +27,7 @@ function App() {
       {/* Admin */}
       <Route path="/loginA" element={<Adminlogin />} />
       <Route path="/dashboard" element={<Dashboard />} /> 
-      <Route path="/auction" element={<Unaccepted_question />} /> 
+      <Route path="/" element={<Unaccepted_question />} /> 
       <Route path="/AddAuctionAdmin" element={<AddAuctionAdmin />} /> 
       <Route path="/EditAuctionAdmin/:id/edit" element={<EditAuctionAdmin />} /> 
       <Route path="/userA" element={<UserAdmin />} /> 

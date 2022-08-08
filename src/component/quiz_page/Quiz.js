@@ -49,8 +49,7 @@ export default function Quiz() {
   return (
 <>
 
-{sessionStorage.getItem("user_info") && sessionStorage.getItem("user_info") == ''
-? window.location.href='/login' :<div>allgood</div>}
+
 
       <div className="container-fluid bg-primary py-5 mb-5 page-header">
         <div className="container py-5">
@@ -146,7 +145,7 @@ export default function Quiz() {
 
           {result.map((data, key) => {
             return (
-                  <div className="col-md-3 " >
+                  <div className="col-md-3 " style={{ margin: '1rem' }} >
                     <div className="card p-3 mb-2" style={{color:'black' ,textAlign:'center' ,width: '30vh' , }}>
                     <div style={{ backgroundImage:Company(data.company) , width:'50px' , height:'50px', backgroundRepeat:'no-repeat', backgroundSize:'100% 100%', borderRadius:'3px'}}></div>
                       <h4 style={{marginTop:'-25%', marginLeft:'23%'}}><strong>{data.company}</strong></h4>

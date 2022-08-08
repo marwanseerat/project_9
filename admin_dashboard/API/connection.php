@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 $serverName='localhost';
 $dbUserName='root';
 $password='';
-$database='project9';
+$database='project_9';
 
 $con = mysqli_connect($serverName, $dbUserName, $password, $database);
 
