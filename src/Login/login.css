@@ -88,24 +88,21 @@
   
   /***** Submit button styles *****/
   #wrapper p.button input {
-    width: 30%;
+    width: 94%;
     cursor: pointer;
     background: #06bbcc;
     padding: 8px 5px;
     color: #fff;
-    font-family: 'Questrial';
+    /* font-family: 'Questrial'; */
     font-size: 18px;
     letter-spacing: 2px;
     border: 1px solid #06bbcc;
     margin-bottom: 10px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); */
     border-radius: 3px;
-    
     transition: all 0.2s linear;
   }
-  #wrapper p.button input:hover {
-    background: #0084c188;
-  }
+  
   #wrapper p.button input:active, #wrapper p.button input:focus {
     background: #0084c188;
     position: relative;
@@ -116,7 +113,7 @@
   
   p.login.button,
   p.signin.button {
-    text-align: right;
+    /* text-align: right; */
     margin: 5px 0;
   }
   
@@ -143,13 +140,13 @@
   /***** Stripped Bottom *****/
   p.change_link {
     position: absolute;
-    color:black;
+    color:#b2b2b2;
    
     height: 20px;
     width: 400px;
    
     font-size: 16px;
-    text-align: right;
+    text-align: center;
    
     border-radius: 0 0 5px 5px;
    

@@ -90,7 +90,7 @@ console.log(errorLog.error);
             }
           </p> */}
           <a href='/login'>
-          <button type='submit'>Sign Up</button>
+          <button type='submit'style={{ width: '97%' , cursor: 'pointer',  background: '#06bbcc' , padding: '8px 5px' ,  color: '#fff' ,  fontfamily: 'Questrial' ,fontsize: '18px' ,  letterspacing: '2px' ,  border: '1px solid #06bbcc' , marginbottom: '10px ' , textshadow: '0 1px 1px rgba(0, 0, 0, 0.5)' ,  borderradius: '3px' , transition:' all 0.2s linear' ,  margin:' 8px 0 ' }} >Sign Up</button>
           </a>
           <p className="change_link">
           Already Have an Account
